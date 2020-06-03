@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Chart.js Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    var jinjaLabels = '{{ labels| tojson }}';
+    var jinjaValues = '{{ values| tojson }}';
+    var jinjaLegend = '{{ legend }}';
+  </script>
+</head>
+
+<body>
+  <h1>Simple Line Chart</h1>
+  <!-- bar chart canvas element -->
+  <canvas id="myChart" width="600" height="400"></canvas>
+  <p id="caption">The chart is displaying a simple line chart.</p>
+</body>
+
+<script type="text/javascript" src="static/logic.js"></script>
+</html>
